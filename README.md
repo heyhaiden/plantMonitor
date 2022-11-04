@@ -5,6 +5,7 @@ Plant monitor system using a WiFi development board, environmental sensors, and 
 ![Project Cover Photo](/assets/plantMonitor_Cover.jpg)
 
 The goal of this project was to research the care requirements of a specific houseplant and build a system that would effectively monitor and report soil and environmental changes over time.
+
 ### The Plant
 My plant was an **Aglaonema Red Star**, or **Chinese Evergreen**. Because of its red leaves it is **particularly sensitive to direct light**, significant temperature changes, and overwatering. Some additional care specifications include:
 <br>
@@ -16,7 +17,7 @@ My plant was an **Aglaonema Red Star**, or **Chinese Evergreen**. Because of its
 |     |     |     |
 | --- | --- | --- |
 | _***Item***_ | _***Description***_ | _***Inputs / Outputs***_ |
-| [Adafruit Feather HUZZAH ESP8266](https://learn.adafruit.com/adafruit-feather-huzzah-esp8266/overview) | All-in-one' ESP8266 WiFi development board with built in USB and battery charging | xxx|
+| [Adafruit Feather HUZZAH ESP8266](https://learn.adafruit.com/adafruit-feather-huzzah-esp8266/overview) | All-in-one' ESP8266 WiFi development board with built in USB and battery charging | xxx |
 | [Arduino Uno](https://store.arduino.cc/products/arduino-uno-rev3) | Microcontroller board based on the ATmega328P, a great starter board for offline projects | -14 digital input/output pins<br>- 6 can be used as PWM outputs<br>- 6 analog inputs |
 | [Huzzah Shield Board](https://github.com/ucl-casa-ce/casa0014/blob/main/plantMonitor/assets/PCB.png) | Designed at CASA specifically for plantMonitor project | xxx |
 | [DHT22 Sensor](https://www.adafruit.com/product/385) | A capacitive humidity sensor and a thermistor to measure surrounding air | - takes readings every 2 seconds <br> - digital signal on the data pin (no analog input pins needed)
@@ -31,7 +32,7 @@ My plant was an **Aglaonema Red Star**, or **Chinese Evergreen**. Because of its
 - [Grafana](https://grafana.com/)
 
 ## Method
-![Project schematic](/assets/plantMonitor_Cover.jpg)
+![Project schematic](plantMonitor_schematic.png)
 
 ### Data Visualization
 - MQTT Setup
