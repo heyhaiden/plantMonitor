@@ -27,7 +27,7 @@ My plant is an **Aglaonema Red Star**, or **Chinese Evergreen**. Because of its 
 | [Ultrasonic Distance Sensor (HC-SR04)](https://www.sparkfun.com/products/15569) | Uses sonar to determine the distance to an object. This sensor reads from 2cm to 400cm (0.8inch to 157inch) with an accuracy of 0.3cm (0.1inches) |  |
 | [Piezo Buzzer](https://arduinogetstarted.com/tutorials/arduino-piezo-buzzer) | Conneting to a positive charge will generate a constant tone |  |
 
-<br>
+
 
 ### Software
 - [Arduino IDE](https://www.arduino.cc/en/software)
@@ -38,6 +38,8 @@ My plant is an **Aglaonema Red Star**, or **Chinese Evergreen**. Because of its 
 - [Telegraf](https://www.influxdata.com/time-series-platform/telegraf/)
 - [Grafana](https://grafana.com/)
 - [Adafruit.io](https://io.adafruit.com/)
+
+<br>
 
 ## Method
 
