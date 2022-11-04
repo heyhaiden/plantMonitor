@@ -62,7 +62,7 @@ const char* mqttpass = SECRET_MQTTPASS;
 6. You will need to **calibrate** the nail moisture sensor to your unique environemnt because soil depth, distance between the nails, and angle of incidence will all affect the quality of your readings. One way to prevent this is to create a mount or use a clip to keep the nails in place.
 7. 
 <p align="center">
-  <img src="/assets/plantMonitor_FinalDesign.jpg">
+  <img src="/assets/completedSensor.jpg">
 </p>
 
 
