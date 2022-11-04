@@ -2,9 +2,14 @@
 Plant monitor system using a WiFi development board, environmental sensors, and live data visualization 
 
 ## Overview
-![Project Cover Photo](/Docs/Plantemoji-main-photo.jpg)
+![Project Cover Photo](/assets/plantMonitor_Cover.jpg)
+<br>
+<br>
 The goal of this project was to research the care requirements of a specific houseplant and build a system that would effectively monitor and report soil and environmental changes over time.
-
+<br>
+<br>
+My plant was an **Aglaonema Red Star**, or **Chinese Evergreen**. Because of the red leaves it is **particularly sensitive to direct light**, significant temperature changes, and overwatering. 
+![Plant Care Specs](/assets/plantMonitor_Specs.jpg)
 
 
 
