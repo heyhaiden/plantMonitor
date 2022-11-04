@@ -21,7 +21,7 @@ My plant was an **Aglaonema Red Star**, or **Chinese Evergreen**. Because of its
 | [Adafruit Feather HUZZAH ESP8266](https://learn.adafruit.com/adafruit-feather-huzzah-esp8266/overview) | All-in-one' ESP8266 WiFi development board with built in USB and battery charging | xxx|
 | Arduino Uno | xxx | xxx|
 | [DHT22 Sensor](https://www.adafruit.com/product/385) | A capacitive humidity sensor and a thermistor to measure surrounding air | - takes readings every 2 seconds <br> - digital signal on the data pin (no analog input pins needed)
-| Two steel nails | Sending +5V through the soil and measuring changes in resistance from one nail to another (electrolysis) |
+| Two steel nails | Sending +5V through the soil and measuring changes in resistance from one nail to another ([electrolysis](https://chem.libretexts.org/Bookshelves/Analytical_Chemistry/Supplemental_Modules_(Analytical_Chemistry)/Electrochemistry/Electrolytic_Cells/Electrolysis#:~:text=In%20Electrolysis%2C%20an%20electric%20current,and%20the%20chloro%2Dalkali%20process.) |
 | xxx | xxx | xxx |
 | xxx | xxx | xxx |
 
