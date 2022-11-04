@@ -9,7 +9,7 @@ Monitor system using a WiFi development board, environmental sensors, and live d
 The goal of this project was to research the care requirements of a specific houseplant and build a system that would effectively monitor and report soil and environmental changes over time.
 
 ### The Plant
-My plant was an **Aglaonema Red Star**, or **Chinese Evergreen**. Because of its red leaves it is **particularly sensitive to direct light**, significant temperature changes, and overwatering. Some additional care specifications include:
+My plant is an **Aglaonema Red Star**, or **Chinese Evergreen**. Because of its red leaves it is **particularly sensitive to direct light**, significant temperature changes, and overwatering. Some additional care specifications include:
 <br>
 - Temperature range from 15C - 25C
 - Water 2x a week, waiting until top soil dries out
@@ -30,9 +30,10 @@ My plant was an **Aglaonema Red Star**, or **Chinese Evergreen**. Because of its
 
 ### Software
 - [Arduino IDE](https://www.arduino.cc/en/software)
-- Adafruit.io
-- InfluxDB
-- Telegraf
+- [Raspberry Pi Imager](https://www.raspberrypi.com/software/)
+- [Adafruit.io](https://io.adafruit.com/)
+- [InfluxDB](https://www.influxdata.com/)
+- [Telegraf](https://www.influxdata.com/time-series-platform/telegraf/)
 - [Grafana](https://grafana.com/)
 
 ## Method
