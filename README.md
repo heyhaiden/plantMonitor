@@ -24,8 +24,7 @@ My plant is an **Aglaonema Red Star**, or **Chinese Evergreen**. Because of its 
 | [Huzzah Shield Board](https://github.com/ucl-casa-ce/casa0014/blob/main/plantMonitor/assets/PCB.png) | Designed at CASA specifically for plantMonitor project |  |
 | [DHT22 Sensor](https://www.adafruit.com/product/385) | A capacitive humidity sensor and a thermistor to measure surrounding air | - takes readings every 2 seconds <br> - digital signal on the data pin (no analog input pins needed)
 | Two steel nails | Sending +5V through the soil and measuring changes in resistance from one nail to another ([electrolysis](https://chem.libretexts.org/Bookshelves/Analytical_Chemistry/Supplemental_Modules_(Analytical_Chemistry)/Electrochemistry/Electrolytic_Cells/Electrolysis#:~:text=In%20Electrolysis%2C%20an%20electric%20current,and%20the%20chloro%2Dalkali%20process.)) |
-| Light sensor | xxx | xxx |
-| Ultrasonic Sensor | xxx | xxx |
+| Ultrasonic Distance Sensor (HC-SR04) | xxx | xxx |
 | Passive Buzzer | xxx | xxx |
 
 ### Software
@@ -38,7 +37,12 @@ My plant is an **Aglaonema Red Star**, or **Chinese Evergreen**. Because of its 
 
 ## Method
 ![Project schematic](/assets/plantMonitor_schematic.png)
-![Completed sensor](/assets/completedSensor.jpg)
+
+The Feather Huzzah requires some additional setup when using it with the Arduino IDE. Visit the Adafruit site and [download](https://learn.adafruit.com/adafruit-feather-huzzah-esp8266/using-arduino-ide) the driver in order to add via the Board Manager. Once connected, the next step is to connect the board to the internet using your local connection. 
+
+<p align="center">
+  <img src="/assets/plantMonitor_FinalDesign.jpg">
+</p>
 
 
 ## Results
