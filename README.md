@@ -1,8 +1,10 @@
-# 🌱 plantMonitor
-Plant monitor system using a WiFi development board, environmental sensors, and live data visualization 
+# 🌱 plantMonitor 🌱
+Monitor system using a WiFi development board, environmental sensors, and live data visualization 
 
 ## Overview
-![Project Cover Photo](/assets/plantMonitor_Cover.jpg)
+<p align="center">
+  <img src="/assets/plantMonitor_Cover.jpg">
+</p>
 
 The goal of this project was to research the care requirements of a specific houseplant and build a system that would effectively monitor and report soil and environmental changes over time.
 
@@ -22,7 +24,9 @@ My plant was an **Aglaonema Red Star**, or **Chinese Evergreen**. Because of its
 | [Huzzah Shield Board](https://github.com/ucl-casa-ce/casa0014/blob/main/plantMonitor/assets/PCB.png) | Designed at CASA specifically for plantMonitor project |  |
 | [DHT22 Sensor](https://www.adafruit.com/product/385) | A capacitive humidity sensor and a thermistor to measure surrounding air | - takes readings every 2 seconds <br> - digital signal on the data pin (no analog input pins needed)
 | Two steel nails | Sending +5V through the soil and measuring changes in resistance from one nail to another ([electrolysis](https://chem.libretexts.org/Bookshelves/Analytical_Chemistry/Supplemental_Modules_(Analytical_Chemistry)/Electrochemistry/Electrolytic_Cells/Electrolysis#:~:text=In%20Electrolysis%2C%20an%20electric%20current,and%20the%20chloro%2Dalkali%20process.)) |
-| xxx | xxx | xxx |
+| Light sensor | xxx | xxx |
+| Ultrasonic Sensor | xxx | xxx |
+| Passive Buzzer | xxx | xxx |
 
 ### Software
 - [Arduino IDE](https://www.arduino.cc/en/software)
@@ -33,7 +37,9 @@ My plant was an **Aglaonema Red Star**, or **Chinese Evergreen**. Because of its
 
 ## Method
 ![Project schematic](/assets/plantMonitor_schematic.png)
-![Final Design](/assets/plantMonitor_FinalDesign.jpg)
+<p align="center">
+  <img src="(/assets/plantMonitor_FinalDesign.jpg)">
+</p>
 
 ### Data Visualization
 - MQTT Setup
