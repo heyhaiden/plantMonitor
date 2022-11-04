@@ -42,15 +42,14 @@ My plant is an **Aglaonema Red Star**, or **Chinese Evergreen**. Because of its 
   <img src="/assets/plantMonitor_FinalDesign.jpg">
 </p>
 
+
+## Results
+- Show screenshots
 ### Data Visualization
 - MQTT Setup
 - Raspberry Pi Gateway
 - InfluxDB
 - Grafana
-
-
-## Results
-- Show screenshots
 
 ## Challenges
 - moisture sensor calibration and design flaws
