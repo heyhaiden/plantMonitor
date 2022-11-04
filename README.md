@@ -44,7 +44,6 @@ My plant is an **Aglaonema Red Star**, or **Chinese Evergreen**. Because of its 
 1. The Feather Huzzah requires some additional setup when using it with the Arduino IDE. Visit the Adafruit site and [**download the SL driver**](https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers?tab=downloads) in order to add via the Board Manager. Once connected, [**add the ESP8266WiFi library**](https://arduino-esp8266.readthedocs.io/en/latest/esp8266wifi/readme.html) to make it easier to connect your board to the internet.
 2. Next add the [PubSubClient library](https://pubsubclient.knolleary.net/) to enable simple publish/subscribe messaging with a server that supports MQTT. There are a handful of example sketches here that may be helpful to work through.
 3. A **very** important note: you will be using sensitive information in your sketch once you connect to your Wifi and MQTT server. DO NOT share these in your code-- create a separate header file that is included in your main sketch. When uploading to Github, add it to a ```.gitignore``` file.
-
 ```
 // Wifi and MQTT
 #include "arduino_secrets.h"
@@ -55,15 +54,13 @@ const char* mqttuser = SECRET_MQTTUSER;
 const char* mqttpass = SECRET_MQTTPASS;
 ```
 4. Now we're ready to add our sensors. Follow the schematic below:
-
 ![Project schematic](/assets/plantMonitor_schematic.png)
-
 5. Run two test scripts ```testMoisture.ino``` and ```testTempHum.ino``` to see whether the sensors are working correctly. The environmental variable values are printed to both the ```console.log``` and serial plotter. 
 6. You will need to **calibrate** the nail moisture sensor to your unique environemnt because soil depth, distance between the nails, and angle of incidence will all affect the quality of your readings. One way to prevent this is to create a mount or use a clip to keep the nails in place. [This design](https://github.com/ucl-casa-ce/casa0014/tree/main/plantMonitor/enclosure) was created by drvkmr I marked the nails with a sharpie as well.
 <p align="center">
   <img src="/assets/completedSensor.jpg">
 </p>
-7. Next set up the Raspberry Pi as a gateway-- 
+7. Next set up the Raspberry Pi as a gateway-- if it's a new board run the Raspberry Pi imager and get your specific network set up. [This tutorial](https://www.tomshardware.com/reviews/raspberry-pi-headless-setup-how-to,6028.html) was very helpful.
 
 
 ## Results
