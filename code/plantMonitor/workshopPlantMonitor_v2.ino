@@ -3,7 +3,7 @@
     HAIDEN MCGILL
     31 OCTOBER 2022
 
-    BASED ON: xxx
+    BASED ON: 
 */
 
 // External libraries
@@ -23,9 +23,9 @@ float Temperature;
 float Humidity;
 int Moisture = 1;  //initial value in case web page loaded before readMoisture function called
 int sensorVCC = 13;
-int blueLED = 2;
 DHT dht(DHTPin, DHTTYPE);  // Initialize DHT sensor.
 
+//ADD DISTURB COUNTER CODE HERE
 //boolean Disturb = false;
 
 // Wifi and MQTT
@@ -110,7 +110,6 @@ void readMoisture() {
 
 
 void startWifi() {
-
   // We start by connecting to a WiFi network
   Serial.println();
   Serial.print("Connecting to ");
@@ -230,6 +229,7 @@ void handle_NotFound() {
     server.send(404, "text/plain", "Not found");
 }
 
+// Static webpage with live data feeds
 String SendHTML(float Temperaturestat, float Humiditystat, int Moisturestat) {
     String ptr = "<!DOCTYPE html> <html>\n";
     ptr += "<head><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, user-scalable=no\">\n";
