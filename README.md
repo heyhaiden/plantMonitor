@@ -30,6 +30,7 @@ My plant is an **Aglaonema Red Star**, or **Chinese Evergreen**. Because of its 
 ### Software
 - [Arduino IDE](https://www.arduino.cc/en/software)
 - [Feather Huzzah driver](https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers?tab=downloads)
+- [MQTT Explorer](http://mqtt-explorer.com/)
 - [Raspberry Pi Imager](https://www.raspberrypi.com/software/)
 - [InfluxDB](https://www.influxdata.com/)
 - [Telegraf](https://www.influxdata.com/time-series-platform/telegraf/)
@@ -37,11 +38,31 @@ My plant is an **Aglaonema Red Star**, or **Chinese Evergreen**. Because of its 
 - [Adafruit.io](https://io.adafruit.com/)
 
 ## Method
+
+### Board Setup
+
+1. The Feather Huzzah requires some additional setup when using it with the Arduino IDE. Visit the Adafruit site and [**download the SL driver**](https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers?tab=downloads) in order to add via the Board Manager. Once connected, [**add the ESP8266WiFi library**](https://arduino-esp8266.readthedocs.io/en/latest/esp8266wifi/readme.html) to make it easier to connect your board to the internet.
+2. Next add the [PubSubClient library](https://pubsubclient.knolleary.net/) to enable simple publish/subscribe messaging with a server that supports MQTT. There are a handful of example sketches here that may be helpful to work through.
+3. A **very** important note: you will be using sensitive information in your sketch once you connect to your Wifi and MQTT server. DO NOT share these in your code-- create a separate header file that is included in your main sketch. When uploading to Github, add it to a ```.gitignore``` file.
+
+```
+// Wifi and MQTT
+#include "arduino_secrets.h"
+
+const char* ssid = SECRET_SSID;
+const char* password = SECRET_PASS;
+const char* mqttuser = SECRET_MQTTUSER;
+const char* mqttpass = SECRET_MQTTPASS;
+```
+4. xxx
+
+
+
+
+
 ![Project schematic](/assets/plantMonitor_schematic.png)
-<p align="center">https://workshops.cetools.org/codelabs/CASA0014-2-Plant-Monitor/index.html#7</p>
-<br>
-The Feather Huzzah requires some additional setup when using it with the Arduino IDE. Visit the Adafruit site and [download](https://learn.adafruit.com/adafruit-feather-huzzah-esp8266/using-arduino-ide) the driver in order to add via the Board Manager. <br>
-Once connected, the next step is to connect the board to the internet using your local connection. 
+
+
 
 <p align="center">
   <img src="/assets/plantMonitor_FinalDesign.jpg">
