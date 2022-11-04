@@ -24,8 +24,8 @@ My plant is an **Aglaonema Red Star**, or **Chinese Evergreen**. Because of its 
 | [Huzzah Shield Board](https://github.com/ucl-casa-ce/casa0014/blob/main/plantMonitor/assets/PCB.png) | Designed at CASA specifically for plantMonitor project |  |
 | [DHT22 Sensor](https://www.adafruit.com/product/385) | A capacitive humidity sensor and a thermistor to measure surrounding air | - takes readings every 2 seconds <br> - digital signal on the data pin (no analog input pins needed)
 | Two steel nails | Sending +5V through the soil and measuring changes in resistance from one nail to another ([electrolysis](https://chem.libretexts.org/Bookshelves/Analytical_Chemistry/Supplemental_Modules_(Analytical_Chemistry)/Electrochemistry/Electrolytic_Cells/Electrolysis#:~:text=In%20Electrolysis%2C%20an%20electric%20current,and%20the%20chloro%2Dalkali%20process.)) |
-| Ultrasonic Distance Sensor (HC-SR04) | xxx | xxx |
-| Passive Buzzer | xxx | xxx |
+| Ultrasonic Distance Sensor (HC-SR04) | Uses sonar to determine the distance to an object. This sensor reads from 2cm to 400cm (0.8inch to 157inch) with an accuracy of 0.3cm (0.1inches) |  |
+| [Piezo Buzzer](https://arduinogetstarted.com/tutorials/arduino-piezo-buzzer) | Conneting to a positive charge will generate a constant tone |  |
 
 ### Software
 - [Arduino IDE](https://www.arduino.cc/en/software)
@@ -59,8 +59,7 @@ const char* mqttpass = SECRET_MQTTPASS;
 ![Project schematic](/assets/plantMonitor_schematic.png)
 
 5. Run two test scripts ```testMoisture.ino``` and ```testTempHum.ino``` to see whether the sensors are working correctly. The environmental variable values are printed to both the ```console.log``` and serial plotter. 
-6. You will need to **calibrate** the nail moisture sensor to your unique environemnt because soil depth, distance between the nails, and angle of incidence will all affect the quality of your readings. One way to prevent this is to create a mount or use a clip to keep the nails in place.
-7. 
+6. You will need to **calibrate** the nail moisture sensor to your unique environemnt because soil depth, distance between the nails, and angle of incidence will all affect the quality of your readings. One way to prevent this is to create a mount or use a clip to keep the nails in place. [This design](https://github.com/ucl-casa-ce/casa0014/tree/main/plantMonitor/enclosure) was created by drvkmr I marked the nails with a sharpie as well.
 <p align="center">
   <img src="/assets/completedSensor.jpg">
 </p>
