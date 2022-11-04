@@ -24,7 +24,7 @@ My plant is an **Aglaonema Red Star**, or **Chinese Evergreen**. Because of its 
 | [Huzzah Shield Board](https://github.com/ucl-casa-ce/casa0014/blob/main/plantMonitor/assets/PCB.png) | Designed at CASA specifically for plantMonitor project |  |
 | [DHT22 Sensor](https://www.adafruit.com/product/385) | A capacitive humidity sensor and a thermistor to measure surrounding air | - takes readings every 2 seconds <br> - digital signal on the data pin (no analog input pins needed)
 | Two steel nails | Sending +5V through the soil and measuring changes in resistance from one nail to another ([electrolysis](https://chem.libretexts.org/Bookshelves/Analytical_Chemistry/Supplemental_Modules_(Analytical_Chemistry)/Electrochemistry/Electrolytic_Cells/Electrolysis#:~:text=In%20Electrolysis%2C%20an%20electric%20current,and%20the%20chloro%2Dalkali%20process.)) |
-| Ultrasonic Distance Sensor (HC-SR04) | Uses sonar to determine the distance to an object. This sensor reads from 2cm to 400cm (0.8inch to 157inch) with an accuracy of 0.3cm (0.1inches) |  |
+| [Ultrasonic Distance Sensor (HC-SR04)](https://www.sparkfun.com/products/15569) | Uses sonar to determine the distance to an object. This sensor reads from 2cm to 400cm (0.8inch to 157inch) with an accuracy of 0.3cm (0.1inches) |  |
 | [Piezo Buzzer](https://arduinogetstarted.com/tutorials/arduino-piezo-buzzer) | Conneting to a positive charge will generate a constant tone |  |
 
 ### Software
@@ -63,6 +63,7 @@ const char* mqttpass = SECRET_MQTTPASS;
 <p align="center">
   <img src="/assets/completedSensor.jpg">
 </p>
+7. Next set up the Raspberry Pi as a gateway-- 
 
 
 ## Results
