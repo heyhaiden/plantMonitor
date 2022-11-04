@@ -38,9 +38,7 @@ My plant is an **Aglaonema Red Star**, or **Chinese Evergreen**. Because of its 
 
 ## Method
 ![Project schematic](/assets/plantMonitor_schematic.png)
-<p align="center">
-  <img src="/assets/plantMonitor_FinalDesign.jpg">
-</p>
+![Completed sensor](/assets/completedSensor.jpg)
 
 
 ## Results
