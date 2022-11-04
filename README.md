@@ -33,7 +33,7 @@ My plant was an **Aglaonema Red Star**, or **Chinese Evergreen**. Because of its
 
 ## Method
 ![Project schematic](/assets/plantMonitor_schematic.png)
-![Final Design](/assets/plantMonitor_FinalDesign.png)
+![Final Design](/assets/plantMonitor_FinalDesign.jpg)
 
 ### Data Visualization
 - MQTT Setup
