@@ -3,7 +3,7 @@ Monitor system using a WiFi development board, environmental sensors, and live d
 
 ## Overview
 <p align="center">
-  <img src="/assets/plantMonitor_Cover.jpg">
+  <img src="/assets/aglaonema red star.jpg">
 </p>
 
 The goal of this project was to research the care requirements of a specific houseplant and build a system that would effectively monitor and report soil and environmental changes over time.
