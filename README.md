@@ -54,16 +54,13 @@ const char* password = SECRET_PASS;
 const char* mqttuser = SECRET_MQTTUSER;
 const char* mqttpass = SECRET_MQTTPASS;
 ```
-4. xxx
-
-
-
-
+4. Now we're ready to add our sensors. Follow the schematic below:
 
 ![Project schematic](/assets/plantMonitor_schematic.png)
 
-
-
+5. Run two test scripts ```testMoisture.ino``` and ```testTempHum.ino``` to see whether the sensors are working correctly. The environmental variable values are printed to both the ```console.log``` and serial plotter. 
+6. You will need to **calibrate** the nail moisture sensor to your unique environemnt because soil depth, distance between the nails, and angle of incidence will all affect the quality of your readings. One way to prevent this is to create a mount or use a clip to keep the nails in place.
+7. 
 <p align="center">
   <img src="/assets/plantMonitor_FinalDesign.jpg">
 </p>
