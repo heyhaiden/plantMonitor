@@ -8,10 +8,11 @@ Plant monitor system using a WiFi development board, environmental sensors, and 
 The goal of this project was to research the care requirements of a specific houseplant and build a system that would effectively monitor and report soil and environmental changes over time.
 <br>
 <br>
-My plant was an **Aglaonema Red Star**, or **Chinese Evergreen**. Because of the red leaves it is **particularly sensitive to direct light**, significant temperature changes, and overwatering. 
-![Plant Care Specs](/assets/plantMonitor_Specs.jpg)
-
-
+My plant was an **Aglaonema Red Star**, or **Chinese Evergreen**. Because of its red leaves it is **particularly sensitive to direct light**, significant temperature changes, and overwatering. Some additiona care specifications include:
+<br>
+- Temperature range from 15C - 25C
+- Water 2x a week, waiting until top soil dries out
+- Fertilize once a month 
 
 ## Hardware 
 - moisture sensor calibration necessary
