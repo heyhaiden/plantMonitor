@@ -60,13 +60,13 @@ const char* mqttpass = SECRET_MQTTPASS;
 4. Now we're ready to add our sensors. Follow the schematic below:
 ![Project schematic](/assets/plantMonitor_schematic.png)
 5. Run two test scripts ```testMoisture.ino``` and ```testTempHum.ino``` to see whether the sensors are working correctly. The environmental variable values are printed to both the ```console.log``` and serial plotter. 
-6. You will need to **calibrate** the nail moisture sensor to your unique environemnt because soil depth, distance between the nails, and angle of incidence will all affect the quality of your readings. One way to prevent this is to create a mount or use a clip to keep the nails in place. [This design](https://github.com/ucl-casa-ce/casa0014/tree/main/plantMonitor/enclosure) was created by drvkmr I marked the nails with a sharpie as well.
+6. You will need to **calibrate** the nail moisture sensor to your unique environemnt because soil depth, distance between the nails, and angle of incidence will all affect the quality of your readings. One way to prevent this is to create a mount or use a clip to keep the nails in place. [**This design**](https://github.com/ucl-casa-ce/casa0014/tree/main/plantMonitor/enclosure) was created by [**drvkmr**](https://github.com/drvkmr). I also marked the nails with a sharpie to ensure the soil depth was the same every time.
 
 <p align="center">
   <img src="/assets/completedSensor.jpg">
 </p>
 
-7. Next set up the Raspberry Pi as a gateway-- if it's a new board run the Raspberry Pi imager and get your specific network set up. [This tutorial](https://www.tomshardware.com/reviews/raspberry-pi-headless-setup-how-to,6028.html) was very helpful.
+7. Next set up the Raspberry Pi as a gateway-- if it's a new board run the Raspberry Pi imager and get your specific network set up. [**This tutorial**](https://www.tomshardware.com/reviews/raspberry-pi-headless-setup-how-to,6028.html) was very helpful.
 
 
 ## Results
@@ -77,12 +77,12 @@ const char* mqttpass = SECRET_MQTTPASS;
 - InfluxDB
 - Grafana
 
-## Challenges
+### Challenges
 - moisture sensor calibration and design flaws
 - moisture sensor calibration necessary
 - constant power needed for system, needed to disconnect to move to my home environment 
 
-## Next Steps
+### Next Steps
 - greener energy consumption
 - make a closed loop system
 - add watering/other passive sensors?
