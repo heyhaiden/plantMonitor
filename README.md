@@ -18,12 +18,12 @@ My plant is an **Aglaonema Red Star**, or **Chinese Evergreen**. Because of its 
 ### Hardware 
 |     |     |     |
 | --- | --- | --- |
-| _***Item***_ | _***Description***_ | _***Inputs / Outputs***_ |
+| _***Item***_ | _***Description***_ | _***Notes***_ |
 | [Adafruit Feather HUZZAH ESP8266](https://learn.adafruit.com/adafruit-feather-huzzah-esp8266/overview) | All-in-one' ESP8266 WiFi development board with built in USB and battery charging | [Pinout diagram](https://learn.adafruit.com/adafruit-feather-huzzah-esp8266/pinouts) |
 | [Arduino Uno](https://store.arduino.cc/products/arduino-uno-rev3) | Microcontroller board based on the ATmega328P, a great starter board for offline projects | [Pinout diagram](https://www.circuito.io/blog/arduino-uno-pinout/) |
 | [Huzzah Shield Board](https://github.com/ucl-casa-ce/casa0014/blob/main/plantMonitor/assets/PCB.png) | Designed at CASA specifically for plantMonitor project |  |
 | [DHT22 Sensor](https://www.adafruit.com/product/385) | A capacitive humidity sensor and a thermistor to measure surrounding air | - takes readings every 2 seconds <br> - digital signal on the data pin (no analog input pins needed)
-| Two steel nails | Sending +5V through the soil and measuring changes in resistance from one nail to another ([electrolysis](https://chem.libretexts.org/Bookshelves/Analytical_Chemistry/Supplemental_Modules_(Analytical_Chemistry)/Electrochemistry/Electrolytic_Cells/Electrolysis#:~:text=In%20Electrolysis%2C%20an%20electric%20current,and%20the%20chloro%2Dalkali%20process.)) |
+| Two steel nails | Sending +5V through the soil and measuring changes in resistance from one nail to another ([electrolysis](https://chem.libretexts.org/Bookshelves/Analytical_Chemistry/Supplemental_Modules_(Analytical_Chemistry)/Electrochemistry/Electrolytic_Cells/Electrolysis#:~:text=In%20Electrolysis%2C%20an%20electric%20current,and%20the%20chloro%2Dalkali%20process.)) | - Initial open-air reading: 8 <br>- Initial fully submerged reading: 480<br>- Recalculated to a range of 1 - 100 for easier graphical representation |
 | [Ultrasonic Distance Sensor (HC-SR04)](https://www.sparkfun.com/products/15569) | Uses sonar to determine the distance to an object. This sensor reads from 2cm to 400cm (0.8inch to 157inch) with an accuracy of 0.3cm (0.1inches) |  |
 | [Piezo Buzzer](https://arduinogetstarted.com/tutorials/arduino-piezo-buzzer) | Conneting to a positive charge will generate a constant tone |  |
 
@@ -67,7 +67,7 @@ const char* mqttpass = SECRET_MQTTPASS;
   <img src="/assets/completedSensor.jpg">
 </p>
 
-** ***The following steps are highly customizable to your own preferred setup-- if you want to send and store your plant's data, or be able to monitor it remotely using a gateway, you'll need a Raspberry Pi, CLI, database, and data visualization tooling.*** **
+** ***The following steps are highly customizable to your own preferred setup-- if you want to send and store your plant's data, or be able to monitor it remotely using a gateway, you'll need a Raspberry Pi, CLI, database, and data visualization platform.*** **
 
 8. A Raspberry Pi can be used as a gateway to send and store the plant monitor's data in the cloud-- if it's a new board, run the [**Raspberry Pi imager**](https://www.raspberrypi.com/software/) and download the appropriate version onto an SD card. Connect to your Raspberry Pi over SSH (secure shell protocol) using PuTTY as a command line interface. [**This tutorial**](https://www.tomshardware.com/reviews/raspberry-pi-headless-setup-how-to,6028.html) was very helpful. 
 
@@ -76,7 +76,13 @@ const char* mqttpass = SECRET_MQTTPASS;
 10. Finally, [**install Grafana**](https://grafana.com/docs/grafana/latest/setup-grafana/configure-grafana/) as a data visualization tool for your live data. [**This**](https://university.influxdata.com/cour) tutorial was very helpful with learning the basics and making custom queries. 
 
 ## Results
-- Show screenshots
+
+|     |     |     |     |
+| --- | --- | --- |     |
+| Image | Sensor | Calibration | Readings |
+| ![Project schematic](/assets/plantMonitor_schematic.png) |  Nail Moisture Sensor   |  Initial open-air reading: 8 <br>Initial fully submerged reading: 480   | These readers were recalculated to a range of 1 - 100 for easier graphical representation. |
+
+
 ### Data Visualization
 - MQTT Setup
 - Raspberry Pi Gateway
