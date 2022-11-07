@@ -61,17 +61,19 @@ const char* mqttpass = SECRET_MQTTPASS;
 4. Now we're ready to add our sensors. Follow the schematic below:
 ![Project schematic](/assets/plantMonitor_schematic.png)
 5. Run two test scripts ```testMoisture.ino``` and ```testTempHum.ino``` to see whether the sensors are working correctly. The environmental variable values are printed to both the ```console.log``` and serial plotter. 
-6. You will need to **calibrate** the nail moisture sensor to your unique environemnt because soil depth, distance between the nails, and angle of incidence will all affect the quality of your readings. One way to prevent this is to create a mount or use a clip to keep the nails in place. [**This design**](https://github.com/ucl-casa-ce/casa0014/tree/main/plantMonitor/enclosure) was created by [**drvkmr**](https://github.com/drvkmr). I also marked the nails with a sharpie to ensure the soil depth was the same every time.
+6. You will need to **calibrate** the nail moisture sensor because soil depth, distance between the nails, and angle of incidence will all affect the quality of your readings. One way to prevent this is to create a mount or use a clip to keep the nails in place. [**This design**](https://github.com/ucl-casa-ce/casa0014/tree/main/plantMonitor/enclosure) was created by [**drvkmr**](https://github.com/drvkmr). I also marked the nails with a sharpie to ensure the soil depth was the same every time.
 
 <p align="center">
   <img src="/assets/completedSensor.jpg">
 </p>
 
-***The following steps are highly customizable to your own preferred setup-- if you want to send and store your plant's data, or be able to monitor it remotely using a gateway, you'll need a Raspberry Pi, CLI, database, and data visualization tooling.***
+** ***The following steps are highly customizable to your own preferred setup-- if you want to send and store your plant's data, or be able to monitor it remotely using a gateway, you'll need a Raspberry Pi, CLI, database, and data visualization tooling.*** **
 
 8. A Raspberry Pi can be used as a gateway to send and store the plant monitor's data in the cloud-- if it's a new board, run the [**Raspberry Pi imager**](https://www.raspberrypi.com/software/) and download the appropriate version onto an SD card. Connect to your Raspberry Pi over SSH (secure shell protocol) using PuTTY as a command line interface. [**This tutorial**](https://www.tomshardware.com/reviews/raspberry-pi-headless-setup-how-to,6028.html) was very helpful. 
 
 9. Next install InfluxDB from the command line (I used the Ubuntu & Debian 64-bit version). [**Here**](https://docs.influxdata.com/influxdb/v2.4/install/?t=Raspberry+Pi) are step-by-step instructions to get your database set up.
+
+10. Finally, [**install Grafana**](https://grafana.com/docs/grafana/latest/setup-grafana/configure-grafana/) as a data visualization tool for your live data. [**This**](https://university.influxdata.com/cour) tutorial was very helpful with learning the basics and making custom queries. 
 
 ## Results
 - Show screenshots
