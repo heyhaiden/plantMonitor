@@ -33,6 +33,7 @@ My plant is an **Aglaonema Red Star**, or **Chinese Evergreen**. Because of its 
 - [Arduino IDE](https://www.arduino.cc/en/software)
 - [Feather Huzzah driver](https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers?tab=downloads)
 - [MQTT Explorer](http://mqtt-explorer.com/)
+- [PuTTY](https://www.putty.org/)
 - [Raspberry Pi Imager](https://www.raspberrypi.com/software/)
 - [InfluxDB](https://www.influxdata.com/)
 - [Telegraf](https://www.influxdata.com/time-series-platform/telegraf/)
@@ -46,7 +47,7 @@ My plant is an **Aglaonema Red Star**, or **Chinese Evergreen**. Because of its 
 ### Board Setup
 
 1. The Feather Huzzah requires some additional setup when using it with the Arduino IDE. Visit the Adafruit site and [**download the SL driver**](https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers?tab=downloads) in order to add via the Board Manager. Once connected, [**add the ESP8266WiFi library**](https://arduino-esp8266.readthedocs.io/en/latest/esp8266wifi/readme.html) to make it easier to connect your board to the internet.
-2. Next add the [**PubSubClient library**](https://pubsubclient.knolleary.net/) to enable simple publish/subscribe messaging with a server that supports MQTT. There are a handful of example sketches here that may be helpful to work through.
+2. Next add the [**PubSubClient library**](https://pubsubclient.knolleary.net/) to enable simple publish/subscribe messaging with a server that supports MQTT. There are a handful of example sketches here that may be helpful to work through. Either create your own test server or download [**MQTT Explorer**](http://mqtt-explorer.com/) in order to start publishing your own messages. A great lightweight (no-code) solution can also be found at [**Adafruit IO**](https://learn.adafruit.com/adafruit-io/mqtt-api).
 3. A **very** important note: you will be using sensitive information in your sketch once you connect to your Wifi and MQTT server. **DO NOT share these in your code**-- create a separate header file that is included in your main sketch. When uploading to Github, add it to a ```.gitignore``` file.
 ```
 // Wifi and MQTT
@@ -66,8 +67,11 @@ const char* mqttpass = SECRET_MQTTPASS;
   <img src="/assets/completedSensor.jpg">
 </p>
 
-7. Next set up the Raspberry Pi as a gateway-- if it's a new board run the Raspberry Pi imager and get your specific network set up. [**This tutorial**](https://www.tomshardware.com/reviews/raspberry-pi-headless-setup-how-to,6028.html) was very helpful.
+***The following steps are highly customizable to your own preferred setup-- if you want to send and store your plant's data, or be able to monitor it remotely using a gateway, you'll need a Raspberry Pi, CLI, database, and data visualization tooling.***
 
+8. A Raspberry Pi can be used as a gateway to send and store the plant monitor's data in the cloud-- if it's a new board, run the [**Raspberry Pi imager**](https://www.raspberrypi.com/software/) and download the appropriate version onto an SD card. Connect to your Raspberry Pi over SSH (secure shell protocol) using PuTTY as a command line interface. [**This tutorial**](https://www.tomshardware.com/reviews/raspberry-pi-headless-setup-how-to,6028.html) was very helpful. 
+
+9. Next install InfluxDB from the command line (I used the Ubuntu & Debian 64-bit version). [**Here**](https://docs.influxdata.com/influxdb/v2.4/install/?t=Raspberry+Pi) are step-by-step instructions to get your database set up.
 
 ## Results
 - Show screenshots
