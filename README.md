@@ -77,17 +77,14 @@ const char* mqttpass = SECRET_MQTTPASS;
 
 ## Results
 
-|     |     |     |     |
-| --- | --- | --- |     |
-| Image | Sensor | Calibration | Readings |
-| ![Project schematic](/assets/plantMonitor_schematic.png) |  Nail Moisture Sensor   |  Initial open-air reading: 8 <br>Initial fully submerged reading: 480   | These readers were recalculated to a range of 1 - 100 for easier graphical representation. |
-
-
 ### Data Visualization
-- MQTT Setup
-- Raspberry Pi Gateway
-- InfluxDB
-- Grafana
+|     |     |    |  
+| --- | --- |--- | 
+| _***MQTT Explorer***_ | ![Project schematic](/assets/xxx.png) | xxx |
+| _***InfluxDB***_ | ![Project schematic](/assets/xxx.png) | xxx |
+| _***Grafana***_ | ![Project schematic](/assets/xxx.png) | xxx |
+
+[Paragraph here about general observations]
 
 ### Challenges
 - moisture sensor calibration and design flaws
