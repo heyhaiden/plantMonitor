@@ -78,9 +78,9 @@ const char* mqttpass = SECRET_MQTTPASS;
 ### Data Visualization
 |     |     |    |  
 | --- | --- |--- | 
-| _***MQTT Explorer***_ | ![Project schematic](/assets/xxx.png) | xxx |
-| _***InfluxDB***_ | ![Project schematic](/assets/xxx.png) | xxx |
-| _***Grafana***_ | ![Project schematic](/assets/xxx.png) | xxx |
+| _***MQTT Explorer***_ | ![MQTT Explorer](/assets/MQTT_Explorer.png) | xxx |
+| _***InfluxDB***_ | ![InfluxDB](/assets/InfluxDB.png) | xxx |
+| _***Grafana***_ | ![Grafana](/assets/xxx.png) | xxx |
 
 [Paragraph here about general observations]
 
