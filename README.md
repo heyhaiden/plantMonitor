@@ -81,11 +81,15 @@ const char* mqttpass = SECRET_MQTTPASS;
 | _***MQTT Explorer***_ | ![MQTT Explorer](/assets/MQTT_Explorer.png) | |
 | _***InfluxDB***_ | ![InfluxDB](/assets/InfluxDB.png) |  |
 
-[Paragraph here about general observations]
+### Observations
+Once data feeds are up and running, monitor over a period of time to determine desired value ranges for each sensor in regards to the plant's preferred growing conditions. A regression curve analysis can be used to smooth out moisture sensor readings over time, allowing you to determine a regular watering cycle for the plant.
+
+Also pay attention to where the plant and sensor are physically placed in a room or environenment, as external factors can influence the readings as well (ie. close to a window that opens, a classroom that fills with people, etc).
 
 ### Challenges
-- Moisture sensor nail calibration and long-term use corrosion 
-- Overall system energy consumption, reliance on constant power
+- Moisture sensor nail calibration was difficult and minute differences in the positioning of the device can cause big discrepancies in values returned
+- The nails are predisposed to corrode during the electrolysis process, limiting life time  
+- Overall system energy consumption is very high, and relies on constant power
 - Limited mobility: need to be in range of a network or reconfigure devices if connected to a new network
 
 ### Suggested Improvements
