@@ -78,22 +78,20 @@ const char* mqttpass = SECRET_MQTTPASS;
 ### Data Visualization
 |     |     |    |  
 | --- | --- |--- | 
-| _***MQTT Explorer***_ | ![MQTT Explorer](/assets/MQTT_Explorer.png) | xxx |
-| _***InfluxDB***_ | ![InfluxDB](/assets/InfluxDB.png) | xxx |
-| _***Grafana***_ | ![Grafana](/assets/xxx.png) | xxx |
+| _***MQTT Explorer***_ | ![MQTT Explorer](/assets/MQTT_Explorer.png) | |
+| _***InfluxDB***_ | ![InfluxDB](/assets/InfluxDB.png) |  |
 
 [Paragraph here about general observations]
 
 ### Challenges
 - moisture sensor calibration and design flaws
-- moisture sensor calibration necessary
-- constant power needed for system, needed to disconnect to move to my home environment 
+- overall energy consumption, needs constant power
+- xxx
 
 ### Next Steps
 - greener energy consumption
-- make a closed loop system
-- add watering/other passive sensors?
-- integrate disturb counter sensor 
+- design closed loop system
+- add watering/other passive sensors
 
 ## Resources
 Based on prior work:
