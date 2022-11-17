@@ -84,14 +84,14 @@ const char* mqttpass = SECRET_MQTTPASS;
 [Paragraph here about general observations]
 
 ### Challenges
-- moisture sensor calibration and design flaws
-- overall energy consumption, needs constant power
-- xxx
+- Moisture sensor nail calibration and long-term use corrosion 
+- Overall system energy consumption, reliance on constant power
+- Limited mobility: need to be in range of a network or reconfigure devices if connected to a new network
 
-### Next Steps
-- greener energy consumption
-- design closed loop system
-- add watering/other passive sensors
+### Suggested Improvements
+- Greener energy consumption: regenerative energy source such as solar/wind, or only send and received messages when the value of the sensor changes within a predetermined range amount
+- Design a closed loop system: negate the need for a "smart" or "connected" device by designing feedback loops that tend to the plant's required needs around temperature, humidity, and moisture
+- Add additional sensors such as a [Adafruit VEML7700 Lux Sensor](https://shop.pimoroni.com/products/adafruit-veml7700-lux-sensor-i2c-light-sensor?variant=21801832448083) to monitor environment and activate an [LED grow light](https://www.onestopgrowshop.co.uk/grow-lights/grow-lights-led-grow-lights.html) for dark winter months 
 
 ## Resources
 Based on prior work:
